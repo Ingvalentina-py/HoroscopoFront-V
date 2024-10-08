@@ -8,7 +8,7 @@ function CreateUser() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:4000/v1/calculadora/createUser', {
+      const response = await fetch('https://horoscopo-back-v.vercel.app//v1/calculadora/createUser', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
